@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>form</title>
+<style>
+body{
+display: flex;
+justify-content: center;
+padding: 0px;
+margin: 8px;
+height: 100vh;
+}
+label{
+display: block;
+padding: 0px;
+
+margin-bottom: 5px;
+}
+button{
+background-color: blue;
+border: None;
+color: white;
+}
+</style>
+</head>
+<body>
+<form>
+<h2>Registration Form</h2>
+<label for="first">First Name:</label>
+<input type="text" id="first"required><br><br>
+
+<label for="last">Last Name:</label>
+<input type="text" id="last"required><br><br>
+
+<label for="username">User-Name:</label>
+<input type="text" id="username"required><br><br>
+
+<label for="gender">Gender:</label>
+<select id="gender" name="gender"required>
+<option value="Male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select><br><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email"required><br><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password"
+pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+title="Password must contain at least one number, one alphabet, one symbol, and be at least 8 characters long" required /><br><br>
+<label for="confirmpassword">Confirm-Password:</label>
+<input type="password" id="confirmpassword"required><br><br>
+
+<label for="contact">Contact:</label>
+<input type="text" id="contact" maxlength="10" required><br><br>
+
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
